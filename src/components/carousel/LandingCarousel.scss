@@ -1,0 +1,62 @@
+@import "../../global.scss";
+.carousel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .viewBox {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 295px;
+    @include MQ(XS) {
+      height: 170px;
+    }
+    @include MQ(S) {
+      height: 170px;
+    }
+  }
+}
+
+.itemWrapper {
+  display: flex;
+  position: relative;
+  background-size: "contain";
+
+  img:not(:first-child){
+    display: none;
+  }
+}
+
+.home_top_carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+
+  .left {
+    //margin-left: 20px;
+    //margin-right: 20px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "FontAwesome5Pro-Light";
+  }
+  .right {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    @extend .left;
+  }
+}

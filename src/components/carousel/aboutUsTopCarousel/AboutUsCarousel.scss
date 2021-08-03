@@ -1,0 +1,87 @@
+@import "../../../global.scss";
+
+// $XS: 320px;
+// $S: 576px;
+// $M: 720px;
+// $L: 960px;
+// $XL: 1200px;
+
+.videoThumbnails {
+  min-width: 400px;
+  opacity: 0.75;
+  // transition: opacity 100ms linear;
+  // opacity: 0.5;
+  // width: 600px;
+  // height: 432px;
+
+  // @include MQ(M) {
+  //   min-width: 200px;
+  //   height: 325px;
+  // }
+  // @include MQ(S) {
+  //   min-width: 200px;
+  //   height: 235px;
+  // }
+  // @include MQ(XS) {
+  //   min-width: 200px;
+  //   height: 235px;
+  // }
+}
+.imagethumbnail {
+  min-width: 442.5px;
+  position: relative;
+}
+
+.captionOnImage {
+  position: absolute;
+  bottom: 15px;
+  left: 18.6px;
+  z-index: 9999;
+  font-family: Raleway;
+  color: white;
+  font-weight: bold;
+}
+.imageSlider {
+  position: relative;
+  max-width: 468px;
+  margin: 0 auto;
+  // transition: transform 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.imageSliderWrapper {
+  display: flex;
+  position: absolute;
+  transition: transform 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.imageSliderContainer {
+  height: 350px;
+}
+.container {
+  overflow: hidden;
+}
+.buttonContainer {
+  // padding-top: 20px;
+  margin: 0 auto;
+}
+
+.arrowContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 0px;
+}
+
+.right {
+  width: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 22px;
+  font-family: FontAwesome5Pro;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #001489;
+  cursor: pointer;
+}

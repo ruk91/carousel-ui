@@ -1,0 +1,46 @@
+@import "../../global.scss";
+
+$XS: 320px;
+$S: 576px;
+$M: 720px;
+$L: 960px;
+$XL: 1200px;
+
+.carousel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .viewBox {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    // padding: 5px;
+    width: 100%;
+    &.shadow {
+      margin-bottom: 0px;
+      box-shadow: 1px 7px 6px -7px gray;
+    }
+  }
+}
+
+.itemWrapper {
+  display: flex;
+  position: relative;
+  transition: transform 200ms;
+}
+.imgAtt {
+  z-index: "1";
+  position: "relative";
+  padding-bottom: 10;
+  :focus {
+    border: 4px solid darkslateblue;
+  }
+}
+
+.imgAtt2 {
+  z-index: "1";
+  position: "relative";
+  padding-bottom: 10;
+  // border: 4px solid black;
+}

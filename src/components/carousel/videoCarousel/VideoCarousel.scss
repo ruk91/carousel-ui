@@ -1,0 +1,113 @@
+ @import "../../../global";
+
+// $XS: 320px;
+// $S: 576px;
+// $M: 720px;
+// $L: 960px;
+// $XL: 1200px;
+.App {
+  overflow: hidden;
+}
+.page {
+  height: 400px;
+  @include MQ(S) {
+    height: 230px;
+  }
+  @include MQ(XS) {
+    height: 200px;
+  }
+  .cardsSlider {
+    position: relative;
+    max-width: 614px;
+    margin: 0 auto;
+    @include MQ(S){
+      max-width: 510px;
+    }
+    @include MQ(XS){
+      max-width: 350px;
+    }
+    .cardsSliderWrapper {
+      display: flex;
+      position: absolute;
+      transition: transform 350ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      margin-top: 16px;
+      .videoThumbnailsforMiddle {
+        min-width: 510px;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        @include MQ(XL){
+          transform: scale(1.25);
+          transition-duration: 0.5s;
+          margin-left: 66px;
+          margin-right: 66px;
+          // min-width: 510px;
+        }
+        @include MQ(L){
+          transform: scale(1.25);
+          transition-duration: 0.8s;
+          margin-left: 66px;
+          margin-right: 66px;
+          min-width: 420px;
+        }
+        @include MQ(M){
+          transform: scale(1.25);
+          transition-duration: 0.8s;
+          margin-left: 66px;
+          margin-right: 66px;
+          min-width: 420px;
+        }
+         @include MQ(S) {
+          transform: scale(1.25);
+          transition-duration: 0.5s;
+           min-width: 320px;
+           margin-top: 10px;
+           margin-bottom: 10px;
+           z-index: 9999;
+           margin-left: 40px;
+           margin-right: 40px;
+         }
+         @include MQ(XS) {
+          transform: scale(1.20);
+          transition-duration: 0.5s;    
+           min-width: 200px;
+           margin-top: 10px;
+           margin-bottom: 10px;
+           z-index: 9999;
+         }
+      }
+      .videoThumbnails {
+        min-width: 400px;
+        opacity: 0.75;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        transition-duration: 0.5s;
+        @include MQ(L){
+          min-width: 300px;
+        }
+        @include MQ(S) {
+          min-width: 270px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          transition-duration: 0.5s;
+        }
+        @include MQ(XS) {
+          min-width: 190px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+}
+.video {
+  pointer-events: none;
+}
+

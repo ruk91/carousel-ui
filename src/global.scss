@@ -1,0 +1,416 @@
+// Fonts
+$font-stack: "Raleway", sans-serif;
+$font-stack-bold: "Raleway-Bold", sans-serif;
+$font-stack-semi-bold: "Raleway-SemiBold", sans-serif;
+$font-stack-light: "Raleway-Light", sans-serif;
+$font-stack-medium: "Raleway-Medium", sans-serif;
+
+$top-nav-height: 100px;
+$mobile-header-height: 50px;
+$footer-height: 160px;
+
+:export {
+  topNavHeight: $top-nav-height;
+}
+
+// max-screen-width
+$max-screen-width: 1400px;
+
+// Colours
+$noetic-cyan: #43efd8;
+$noetic-grey: #444444;
+$black: #000000;
+$chetwode-blue: #6672b8;
+$dark-blue: #001489;
+$pale-blue: #4b5fa9;
+$black-currant: #201f21;
+$brand-colour: #0a3a81;
+$black: #000000;
+$white: #ffffff;
+$text-colour: #201f21;
+$text-light: #8f8f8f;
+$greyish-brown-two: #4a4a4a;
+$line-and-outline: #d9d8d8;
+$line-and-outline-dark: #bebebe;
+$form-background-light: #eff2f6;
+$form-background-dark: #eceff4;
+$athens-gray: #f3f5f8;
+$midnight-blue: #1d223c;
+$light-blue-grey: #d7dde8;
+$dark: #1d223c;
+$greyish-brown: #404040;
+$light-grey: #e7e7e7;
+$pale-grey: #f6f8fc;
+$white-two: #f0f0f0;
+$light-gray: #e5eced;
+$greyish-brown: #404040;
+$turquoise-pearl: #44b0dc;
+
+
+// Messages
+$message-positive: #17ad49;
+$dark-grass-green: #417505;
+$message-error: #d0021b;
+$message-warning: #af272f;
+$message-pending: #f5a623;
+$msg-pending-darker: #b1791c;
+
+//Fonts
+
+$font-size-H1: 45px;
+$font-size-H2: 35px;
+$font-size-H3: 27px;
+$font-size-H4: 25px;
+$font-size-H5: 24px;
+$font-size-H6: 18px;
+
+//buttons
+$cloud-blue: #b7bfda;
+$light-blue-grey: #d7dde8;
+$deep-blue: #001489;
+
+// Fields
+$input-text: #4d4d4d;
+$input-background: #fcfbfb;
+$input-text-disabled: #9b9b9b;
+$input-invalid-border: #e1c3c7;
+$inline-label-hover: #6dc1c3 !default;
+$input-icon: #487574 !default;
+$multi-select-border: #124578;
+$multi-select-text: #325052 !default;
+$select-border: #aebcd3;
+$cloudy-blue: #b7bfda;
+// Fonts
+$font-normal: $font-stack, sans-serif;
+$font-bold: $font-stack-bold, sans-serif;
+$font-demi: "noetic-demi", sans-serif;
+$font-medium: $font-stack-medium, sans-serif;
+$box-shadow-raised: 0 8px 12px -6px rgba(0, 0, 0, 0.1);
+$box-shadow-sunk: inset 2px 3px 4px 0 rgba(0, 0, 0, 0.09);
+
+$font-size-normal: 14px;
+$font-size-small: 12px;
+$font-size-large: 18px;
+
+$font-size-H1: 24px;
+$font-size-H2: 18px;
+
+// New
+$border-width: 1px;
+$border-radius-round: 5px;
+
+// Box Shadow
+$bottom-box-shadow: 0 8px 5px -6px $line-and-outline;
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+//Media Queries Added by Wasantha
+//WASANTHA: IMPORTANT Please don't change this section.
+//This section needs to be remove later as the same is there in the Grid.scss, the reference to Grid.scss needs to be added in each page when changeing.
+$XS: 320px;
+$S: 576px;
+$M: 720px;
+$L: 960px;
+$XL: 1200px;
+
+// Media Queries
+@mixin MQ($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: 575px) {
+      @content;
+    }
+  }
+  @if $canvas == S {
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $canvas == M {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $canvas == L {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+html {
+  color: deepskyblue;
+  font-family: $font-stack;
+  font-size: 100%;
+}
+
+body {
+  margin: 0px;
+  background-color: #f0f0f0;
+}
+
+//////////////////////////////////@at-root
+
+// Main
+$brand-colour: #6dc1c3 !default;
+$black: #000000;
+$white: #ffffff;
+$text-colour: #201f21;
+$text-light: #8f8f8f;
+$line-and-outline: #d9d8d8;
+$line-and-outline-dark: #bebebe;
+$form-background-light: #eff2f6;
+$form-background-dark: #eceff4;
+$cloudy-blue: #b7bfda;
+
+// Messages
+$message-positive: #17ad49;
+$message-error: #d0021b;
+$msg-pending-darker: #b1791c;
+
+// CTAs
+$cta-background-secondary: #cbefea !default;
+$cta-hover-primary: #6672b8 !default;
+$cta-secondary-text: #406d6d !default;
+$cta-secondary-hover: #ebeef3;
+$cta-secondary-border: #82bec1 !default;
+$cta-secondary-border-hover: #c6d0e0;
+$cta-disabled-text: #afbcd2;
+$cta-light-highlited_text: #ced8e6;
+$cta-link-text: #6dc1c3;
+$label-background: #44b0dc;
+
+.wrapper {
+  height: 87px;
+
+  &.inline {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.label {
+  @extend .labelText;
+}
+
+.inputWrapper {
+  background-color: $input-background;
+  border: 1px solid $line-and-outline;
+  border-radius: 3px;
+  box-shadow: $box-shadow-sunk;
+  color: $input-text;
+  display: inline-block;
+  width: 100%;
+
+  input {
+    background-color: transparent;
+    border: none;
+    color: $input-text;
+    font-family: $font-normal;
+    font-size: 15px;
+    padding: 12px 0;
+    text-align: center;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .day {
+    width: 30%;
+  }
+
+  .month {
+    width: 30%;
+  }
+
+  .year {
+    width: 30%;
+  }
+
+  .invalid {
+    color: $message-error;
+  }
+
+  &.invalidDate {
+    border: solid 1px $input-invalid-border;
+  }
+}
+
+.disabledContainer {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.errorText {
+  @extend .inputError;
+  margin-top: 7px;
+}
+
+// Reusable Classes
+.labelText {
+  color: $text-colour;
+  display: block;
+  font-family: $font-medium;
+  font-size: 14px;
+  font-weight: 500;
+  height: 19px;
+  margin-bottom: 5px;
+
+  &::selection {
+    background: $cta-background-secondary;
+  }
+}
+
+.inlineLabel {
+  color: $text-colour;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: $font-medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-right: 30px;
+
+  &:focus,
+  &:hover {
+    outline: none;
+
+    &:not(.disabled) {
+      color: $inline-label-hover;
+    }
+  }
+}
+
+.inputError {
+  color: $message-error;
+  font-family: $font-medium;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.actionButton {
+  background-color: $brand-colour;
+  border: none;
+  border-radius: 5px;
+  box-shadow: $box-shadow-raised;
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  font-family: $font-bold;
+  font-size: 16px;
+  //font-weight: 100;
+  min-height: 44px;
+  min-width: 100px;
+  padding: 11px 30px;
+  transition: background-color 200ms;
+
+  &:hover {
+    background-color: $cta-hover-primary;
+  }
+
+  &.secondary {
+    background-color: $cta-background-secondary;
+    border: solid 1px $cta-secondary-border;
+    color: $cta-secondary-text;
+    transition: background-color 200ms, border 200ms;
+
+    &:hover {
+      background-color: $cta-secondary-hover;
+      border: solid 1px $cta-secondary-border-hover;
+    }
+  }
+
+  &.giant {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 132px;
+    min-width: 240px;
+  }
+
+  &:disabled {
+    background-color: $cta-secondary-hover;
+    border: solid 1px $cta-secondary-border-hover;
+    color: $cta-disabled-text;
+    cursor: default;
+  }
+
+  &.link {
+    background-color: transparent;
+    box-shadow: none;
+    color: $cta-link-text;
+    font-family: $font-medium;
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 0;
+
+    &:disabled {
+      border: none;
+      color: $cta-disabled-text;
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  // Remove focus border in FF
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+// spiner loading while request in progress
+.loadingOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body :global {
+  .no-timer {
+    .countDownWrapper {
+      display: none !important;
+    }
+  }
+  .no-margin {
+    margin: 0px !important;
+    padding: 0px !important;
+    position:absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    @include MQ(XS) {
+      padding: unset;
+    }
+    @include MQ(S) {
+      padding: unset;
+    }
+    @include MQ(M) {
+      padding: unset;
+    }
+    @include MQ(L) {
+      padding: unset;
+    }
+    @include MQ(XL) {
+      padding: unset;
+    }
+  }
+}

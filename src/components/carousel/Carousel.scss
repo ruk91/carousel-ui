@@ -1,0 +1,137 @@
+@import "../../global";
+.morton_hotel_solid_square_cmyk {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff69;
+  }
+  .morton {
+    height: 26px;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .viewhotel {
+    height: 23px;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: bold;
+    font-stretch: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .right {
+    width: 10px;
+    margin-left:5px;
+    margin-right:5px;
+    height: 22px;
+    font-family: FontAwesome5Pro;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #001489;
+  }
+  .arrow_left {
+    margin-left:5px;
+    margin-right:5px;
+    color: #001489;
+    font-size: 22px;
+  }
+  .bullet_selected {
+    margin-left:5px;
+    margin-right:5px;
+    color: $deep-blue;
+    font-size: 9px;
+    cursor: pointer;
+  }
+  .bullet_normal {
+    margin-left:5px;
+    margin-right:5px;
+    color: #b7bfda;
+    font-size: 9px;
+    cursor: pointer;
+  }
+.bullet_normal_home {
+    margin-left:5px;
+    margin-right:5px;
+    color: white;
+    font-size: 9px;
+    cursor: pointer;
+  }
+.bullet_selected_home {
+  margin-left:5px;
+  margin-right:5px;
+  color: $deep-blue;
+  font-size: 9px;
+  cursor: pointer;
+}
+.home_top_carousel {
+  margin-top: -75px;
+  z-index:0;
+  margin-bottom:75px;
+  display: "flex";
+  align-content: "center";
+  justify-content: "flex-end";
+  width: 55%;
+
+  .bullet_normal {
+    margin-left:5px;
+    margin-right:5px;
+    color: #b7bfda;
+    font-size: 9px;
+  }
+  .bullet_selected {
+    margin-left:5px;
+    margin-right:5px;
+    color: #001489;
+    font-size: 9px;
+  }
+  .right {
+    margin-left:5px;
+    margin-right:5px;
+    color: #b7bfda;
+    font-size: 9px;
+  }
+}
+
+.dolor_sit_amet {
+  height: 23px;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.waysContainer {
+  display: grid;
+  grid-column-gap: 10px;
+  align-items: "center";
+  margin: 2px;
+
+  @include MQ(S) {
+      grid-template-columns: 1fr;
+      width: 400px;
+  }
+}
+
+.default_carousel {
+  display: "flex";
+  align-content: "center";
+  justify-content: "center";
+}

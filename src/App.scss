@@ -1,0 +1,122 @@
+@import "./global";
+
+.rightContainer {
+    flex: 3;
+    margin-left: 50px;
+
+@include MQ(XS) {
+    margin-left: unset;
+}
+
+@include MQ(S) {
+    margin-left: unset;
+}
+
+@include MQ(M) {
+    margin-left: unset;
+}
+}
+
+.hotelDescription {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    margin: 20px 0 48px;
+
+@include MQ(L) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+@include MQ(XL) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.carouselWrapper {
+    overflow: hidden;
+}
+
+.arrowContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    // margin-top: 14px;
+}
+
+.scrolling_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrolling_wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.scrolling_wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.right {
+    width: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    height: 22px;
+    font-family: FontAwesome5Pro;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #001489;
+    cursor: pointer;
+}
+
+.right_disabled {
+    @extend .right;
+    color: #dddddd;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.69;
+    color: $black;
+    margin: 14px 0 18px;
+}
+
+.listContainer {
+    margin: 24px 0 0;
+}
+}
+
+
+.noSelect {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hotelViewCarousalImage {
+    height: 420px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    @include MQ(S) {
+    background-position: -461px center;
+    }
+
+    @include MQ(XS) {
+    background-position: -461px center;
+    }
+}

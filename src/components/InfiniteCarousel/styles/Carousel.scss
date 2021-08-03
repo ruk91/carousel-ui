@@ -1,0 +1,152 @@
+@import "../../../global";
+.BrainhubCarousel {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.BrainhubCarousel__trackContainer {
+  overflow: hidden;
+}
+.BrainhubCarousel__track {
+  display: flex;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.BrainhubCarousel__track--transition {
+  transition: transform;
+}
+/* arrows */
+.BrainhubCarousel__arrows {
+  cursor: pointer;
+}
+.arrowsCarouselContainer {
+  > div > div > div > svg {
+    color: white;
+  }
+  position: absolute;
+  bottom: 68px ;
+  left: 50%;
+  right: 50%;
+  z-index: 1;
+  @include MQ(S) {
+    display: none
+  }
+
+  @include MQ(XS) {
+    display: none
+  }
+  @include MQ(M) {
+    display: none
+  }
+  @include MQ(L) {
+    display: none
+  }
+}
+.hotelNameMain {
+  position: absolute;
+  bottom: 68px;
+  right: 0;
+  left: 0;
+  @include MQ(S) {
+    bottom: 75px;
+  }
+
+  @include MQ(XS) {
+    bottom: 75px;
+  }
+  @include MQ(M) {
+    bottom: 75px;
+  }
+  @include MQ(L) {
+    bottom: 75px;
+  }
+  @include MQ(XL) {
+    //bottom: 75px;
+  }
+}
+.withoutDots {
+  display: none;
+  position: absolute;
+  bottom: 75px;
+  //left: 50%;
+  //right: 50%;
+  width: 100%;
+  z-index: 1;
+  //align-items: center;
+  //justify-content: center;
+  @include MQ(S) {
+    display: flex;
+  }
+
+  @include MQ(XS) {
+    display: flex;
+  }
+  @include MQ(M) {
+    display: flex;
+  }
+  @include MQ(L) {
+    display: flex;
+  }
+}
+.overlyArrows {
+  display: flex;
+  position: absolute;
+  //bottom: 50%;
+  top: 45%;
+  //left: 50%;
+  //right: 50%;
+  width: 100%;
+  //z-index: 1;
+  div > div {
+    margin: 0;
+  }
+  //align-items: center;
+  //justify-content: center;
+  @include MQ(S) {
+    top: 40%;
+  }
+  //
+  @include MQ(XS) {
+    top: 40%;
+  }
+  //@include MQ(M) {
+  //  display: flex;
+  //}
+  //@include MQ(L) {
+  //  display: flex;
+  //}
+}
+.overlyArrowsMain{
+  position: relative;
+  height: 100%;
+  div:first-child {
+    height: 100%;
+  }
+}
+.nameContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
+  max-width: 1300px;
+  margin: auto;
+  @include MQ(XL) {
+    padding-right: 90px;
+    padding-left: 10px;
+  }
+}
+.viewHotelNewCarousel {
+  height: 23px;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: bold;
+  font-stretch: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
